@@ -809,6 +809,77 @@ section {
   background-color: #ffc451;
 }
 
+/*--------------------------------------------------------------
+# Session
+--------------------------------------------------------------*/
+#session{
+  background-color: #0C1A25ff;
+}
+#session .container .section-title h2{
+  font-size: 2.5rem;
+  color: #fff;
+}
+#session p{
+  color: #fff;
+  font-weight: bold;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#session .img-t{
+  width: 25rem;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+# Session box
+--------------------------------------------------------------*/
+ 
+.session .info-box {
+  color: #444444;
+  text-align: center;
+ box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  padding: 20px 0 30px 0;
+  border-radius: 10px;
+  border: transparent;
+ /* border: #fff 1px solid;*/
+  background: rgba(40, 67, 135, 0.1);
+
+  
+}
+.session .info-box:hover {
+ color: #444444;
+  text-align: center;
+  border: #fff 1px solid;
+  border-radius: 2px;
+  transition: opacity 2s ease, border-color 2s ease;
+  transform: translateY(-10px) ease 2s;
+
+}
+
+.session .info-box i.bx {
+  font-size: 24px;
+  color: #ffb727;
+  border-radius: 50%;
+  padding: 15px;
+  background: #fff6e4;
+}
+
+.session .info-box li {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+  list-style: none;
+  color: #fff;
+}
+
+
+
+.session .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
 
 
 /*--------------------------------------------------------------
