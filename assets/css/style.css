@@ -50,7 +50,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc550;
+  background: #130c94;
   color: #fff;
 }
 
@@ -372,7 +372,7 @@ h6 {
 #hero .btn-scroll button:hover {
   color: #020024;
   background: rgb(27,27,27);
-  background: linear-gradient(270deg, rgba(27,27,27,1) 0%, rgba(30,127,194,1) 23%, rgba(41,49,135,1) 100%);
+  background: linear-gradient(180deg, #2393D2 -79.25%, rgba(26, 26, 26, 0) 251.48%);
   border: 1px solid #0066ff;
 }
 @media (max-width: 693px) {
@@ -445,7 +445,7 @@ section {
 }
 
 .section-bg {
-  background-color: black;
+  background: #0C1A25ff  top center no-repeat;
 }
 
 .section-title {
@@ -500,7 +500,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #f4f5f6;
+  background: rgba(6, 46, 74, 0.9)  top center no-repeat;
   min-height: 40px;
   margin-top: 78px;
 }
@@ -562,18 +562,21 @@ section {
 --------------------------------------------------------------*/
 .about{
   color: #fff;
-  background-color: #000;
+  background: #0C1A25ff;
+  
 }
 .about p {
   margin: -15px 0 30px 0;
   line-height: 24px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*--------------------------------------------------------------
 # register
 --------------------------------------------------------------*/
 .register {
-  background: #000;
+ background:#0C1A25ff  top center no-repeat;
   background-size: cover;
   padding: 60px 0;
 }
@@ -589,7 +592,7 @@ section {
 }
 
 .register .register-btn {
-  background: #0D99FF;
+  background: #030333;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -599,7 +602,7 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
 }
 
@@ -610,167 +613,57 @@ section {
 
 
 /*--------------------------------------------------------------
-# Stats Counter Section
+# Counts
 --------------------------------------------------------------*/
-.stats-counter {
-  padding: 40px 0;
+.counts {
+  background: url("../img/bg-count.webp") center center no-repeat;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+  position: relative;
 }
 
-.stats-counter .stats-item {
-  padding: 20px 0;
-  border-bottom: 1px solid #e4e4e4;
+.counts::before {
+  content: "";
+  position: absolute;
+  background: rgba(17, 17, 17, 0.9);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
-.stats-counter .stats-item .purecounter {
-  min-width: 90px;
-  padding-right: 15px;
+.counts .title {
+  position: relative;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
-.stats-counter .stats-item i {
-  font-size: 44px;
-  line-height: 0;
-  margin-right: 15px;
+.counts .title h3 {
+  font-size: 36px;
+  font-weight: 700;
 }
 
-.stats-counter .stats-item span {
-  font-size: 40px;
+.counts .counters span {
+  font-size: 48px;
   display: block;
   font-weight: 700;
-  color: var(--color-primary);
-  line-height: 40px;
+  color: #7379f0;
 }
 
-.stats-counter .stats-item p {
-  margin: 0;
-  font-family: var(--font-primary);
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Spaam Section
---------------------------------------------------------------*/
-.spaam .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
-  background-size: cover;
-  padding: 100px 60px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.spaam h3 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.spaam p {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.spaam .play-btn {
-  width: 94px;
-  height: 94px;
-  margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-.spaam .play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.spaam .play-btn:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.spaam .play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-.spaam .play-btn:hover:after {
-  border-left: 15px solid var(--color-primary);
-  transform: scale(20);
-}
-
-.spaam .cta-btn {
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 48px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: 2px solid #fff;
   color: #fff;
 }
 
-.spaam .cta-btn:hover {
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
+@media (min-width: 1200px) {
+  .counts {
+    background-attachment: fixed;
   }
 }
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -806,7 +699,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #130c94;
 }
 
 /*--------------------------------------------------------------
@@ -837,13 +730,12 @@ section {
 .session .info-box {
   color: #444444;
   text-align: center;
- box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
   padding: 20px 0 30px 0;
   border-radius: 10px;
   border: transparent;
- /* border: #fff 1px solid;*/
-  background: rgba(40, 67, 135, 0.1);
-
+  background: linear-gradient(180deg, #2393D2 -79.25%, rgba(26, 26, 26, 0) 251.48%);
+  backdrop-filter: blur(11px);
   
 }
 .session .info-box:hover {
@@ -853,6 +745,7 @@ section {
   border-radius: 2px;
   transition: opacity 2s ease, border-color 2s ease;
   transform: translateY(-10px) ease 2s;
+  background: rgba(40, 67, 135, 0.1);
 
 }
 
@@ -881,12 +774,142 @@ section {
   justify-content: center;
 }
 
+/*--------------------------------------------------------------
+# Spaam Section
+--------------------------------------------------------------*/
+.spaam{
+  background: #0C1A25ff;
+}
+.spaam .container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/SPAAM.jpg") no-repeat;
+  background-size: cover;
+  padding: 100px 60px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.spaam h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.spaam p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.spaam .play-btn {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 20px;
+  background: radial-gradient(#0C1A25ff 52%);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.spaam .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid #0C1A25ff;
+  top: -15%;
+  left: -15%;
+  background: #0C1A25ff;
+}
+
+.spaam .play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms;
+}
+
+.spaam .play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+.spaam .play-btn:hover:after {
+  border-left: 15px solid #0C1A25ff;
+  transform: scale(20);
+}
+
+.spaam .cta-btn {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.spaam .cta-btn:hover {
+  background: #0C1A25ff;
+  border: 2px solid #0C1A25ff;
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: rgba(6, 46, 74, 0.9) url("../img/bg.png") top center no-repeat;
+  background: rgba(6, 46, 74, 0.9)  top center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -931,7 +954,7 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: #f3a200;
+  background: #130c94;
   color: #fff;
   text-decoration: none;
 }
