@@ -263,3 +263,42 @@
   });
 
 })()
+
+/*---------Speaker Slider*/
+
+  new Swiper(".swiper-container", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        
+      },
+      480: {
+        slidesPerView: 1,
+        
+      },
+      640: {
+        slidesPerView: 1,
+        
+      },
+      992: {
+        slidesPerView: 3,
+        
+      },
+    },
+  });
+
+  
+ 

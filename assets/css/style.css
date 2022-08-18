@@ -876,14 +876,6 @@ section {
 /* --------------------------------------------------- 
 Speakers
 ---------------------------------------------------------- */
-
-.speakers{
-  background-color: #000;
-}
-
-.speakers .swiper-slide{
-  margin-left: 300px;
-}
 .border1 {
   height: 369px;
   width: 290px;
@@ -895,6 +887,10 @@ Speakers
 
 .border1:hover {
   border: 1px solid #fff;
+}
+
+.speakers{
+  background-color: #000;
 }
 
 .card {
@@ -911,25 +907,19 @@ Speakers
   align-items: center;
   position: relative;
 }
-.card h2{
-  opacity: 0;
-}
 
 .card0 {
   background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
   background-size: 300px;
 }
 
-.card0:hover {
-  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
-  background-size: 600px;
-}
 
-.card:hover h2 {
+
+.card0:hover h2 {
   opacity: 1;
 }
 
-.card0:hover .fa {
+.card0:hover .fab {
   opacity: 1;
 }
 
@@ -938,16 +928,13 @@ Speakers
   background-size: 300px;
 }
 
-.card1:hover {
-  background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg") left center no-repeat;
-  background-size: 600px;
-}
+
 
 .card1:hover h2 {
   opacity: 1;
 }
 
-.card1:hover .fa {
+.card1:hover .fab {
   opacity: 1;
 }
 
@@ -956,16 +943,12 @@ Speakers
   background-size: 300px;
 }
 
-.card2:hover {
-  background: url("https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg") left center no-repeat;
-  background-size: 600px;
-}
 
 .card2:hover h2 {
   opacity: 1;
 }
 
-.card2:hover .fa {
+.card2:hover .fab {
   opacity: 1;
 }
 
@@ -977,7 +960,28 @@ h2 {
   transition: opacity 1s;
 }
 
-.fa {
+.fab {
   opacity: 0;
-  transition: opacity 1s;
+  width:10px;
+  
+}
+
+.icons {
+ 
+  height: 130px;
+  top: 266px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.swiper-slide-active h2 {
+  opacity: 1;
+}
+.swiper-slide-active .icons .fab{
+  opacity: 1;
+}
+.swiper-slide-active .card .border1{
+  border: 1px solid #fff;
 }
